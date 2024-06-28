@@ -1,0 +1,38 @@
+- type: http
+  tags:
+    - servidor01
+  id: meudominio.com.br
+  enabled: true
+  schedule: '30s'
+  hosts:
+    - 'https://meudominio.com.br/health'
+  timeout: 30s
+  check.response:
+    status:
+      - 200
+
+- type: http
+  tags:
+    - servidor02
+  id: meusegundodominio.com.br
+  enabled: true
+  schedule: '30s'
+  hosts:
+    - 'https://meusegundodominio.com.br/health'
+  timeout: 30s
+  check.response:
+    status:
+      - 200
+      
+- type: http
+  tags:
+    - servidor03
+  id: meuterceirodominio.com.br
+  enabled: true
+  schedule: '30s'
+  hosts:
+    - 'https://meuterceirodominio.com.br/health'
+  timeout: 30s
+  check.response:
+    status:
+      - 200
