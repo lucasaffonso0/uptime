@@ -69,6 +69,14 @@ db_pool = pooling.MySQLConnectionPool(
 ```
 Preencha os valores de host, port, database, user e password com as informações do seu banco de dados MySQL.
 
+### Notificações para o Discord
+
+Para o script enviar notificações para o discord, substitua o "cole_sua_webhook_aqui" pela sua webhook do discord
+
+```python
+  webhook_url = "cole_sua_webhook_aqui"
+```
+
 ## Uso
 
 Para executar o script de monitoramento de uptime, use o comando:
