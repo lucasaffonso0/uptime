@@ -125,7 +125,7 @@ def main():
     config = load_config('config.yml')
 
     # Webhook do discord para receber as notificações
-    webhook_url = ""
+    webhook_url = "cole_sua_webhook_aqui"
 
     # Criar um pool de conexões PostgreSQL
     db_pool = pooling.MySQLConnectionPool(
